@@ -35,7 +35,16 @@ module.exports = () => {
       new WebpackPwaManifest({
         background_color: '#2A8C68',
         inject: true,
-
+        start_url:'/',
+        icons: [
+          {
+            destination: 'icons',
+            sizes: [96, 128, 192, 256, 384, 512],
+            src: ("./src/images/localStorage.png"),
+          },
+        ],
+        name: "Text Editor",
+        theme_color:"#2A8C68",       
 
       })
     ],
