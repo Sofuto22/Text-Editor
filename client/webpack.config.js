@@ -18,16 +18,22 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
+      
+      //unsure what to do here yet
       new HtmlWebpackPlugin({
 
       }),
 
       new InjectManifest({
+        
+        //Hopefully right after looking at a tutorial
+        swSrc:"./src-sw.js",
+        swDest:"./src-sw.js",
 
       }),
       
       new WebpackPwaManifest({
-        
+
       })
     ],
 
