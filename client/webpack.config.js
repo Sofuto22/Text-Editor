@@ -33,6 +33,9 @@ module.exports = () => {
       }),
       
       new WebpackPwaManifest({
+        background_color: '#2A8C68',
+        inject: true,
+
 
       })
     ],
